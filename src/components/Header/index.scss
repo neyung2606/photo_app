@@ -10,7 +10,7 @@
         color: #000;
         transition: all 0.25s ease-in-out;
 
-        &__active, &:hover {
+        &--active, &:hover {
             text-decoration: none;
             color: var(--primary);
         } 

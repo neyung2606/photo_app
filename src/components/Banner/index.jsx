@@ -1,4 +1,5 @@
 import React from "react";
+import './index.scss';
 
 const Banner = (props) => {
   const { title, backgroundUrl } = props;

@@ -8,6 +8,8 @@ import {
 import "./App.scss";
 import Header from "./components/Header";
 
+const Photo = React.lazy(() => import('./features/Photo'));
+
 function App() {
   return (
     <div className="photo_app">
@@ -17,8 +19,8 @@ function App() {
           <Switch>
             <Redirect exact from="/" to="/photos" />
 
-            {/*  <Route path="/photos" component={Photo} />
-  <Route component={NotFound} /> */}
+            <Route path="/photos" component={Photo} />
+            {/*<Route component={NotFound} />*/}
           </Switch>
         </Router>
       </Suspense>
